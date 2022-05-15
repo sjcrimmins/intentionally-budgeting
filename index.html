@@ -1,0 +1,41 @@
+<!--
+Intentionally Budgeting - A project by Shawn Crimmins for the hackIMSA event 2022
+Fonts Used include Quicksand by Andrew Paglinawan from Google Fonts
+Navbar Adapted from https://www.w3schools.com/css/css_navbar_horizontal.asp
+Copyright (c) Shawn Crimmins 2022
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<!-- Call Google Fonts API to access Quicksand Font-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+	<title>Intentionally Budgeting</title>
+</head>
+<body>
+	<div class="navbar">
+		<ul class="navbar-list">
+			<li class="navbar-item"><a class="navbar-link" href="index.html">Calculator</a></li>
+			<li class="navbar-item"><a class="navbar-link" href="education.html">Guide</a></li>
+			<li class="navbar-item" id="about-link"><a class="navbar-link" href="about.html">About</a></li>
+		</ul>
+	</div>
+	<div class="intro">
+		<h1 class="title">Intentionally Budgeting Calculator</h1>
+		<p class="intro-paragraph">This is a tool meant to help create intention when budgeting. Take the time to
+			determine how much you earn (after taxes) in a month, what expenses you have each month, and how much you
+			would like to save. With this information, the calculator will tell you how much you have left to spend
+			each month.</p>
+	</div>
+	<div class="budgeting-tool">
+		<!-- when inputs are updated, set output to the post income tax minus living expenses and saving and investments-->
+		<form id="budgeting-tool-form" oninput="d.value=parseInt(a.value)-parseInt(b.value)-parseInt(c.value)">
+			<p>Post Income Tax: </p><input type="number" id="a" value="0">
+			<p>Living Expenses: </p><input type="number" id="b" value="0"><br>
+			<p>Savings and Investments: </p><input type="number" id="c" value="0"><br>
+			<h2>Spending Budget - $<output name="d" for="a b c" form="budgeting-tool-form"></output></h2>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+.navbar{
+    font-family: Quicksand;
+    font-weight: bold;
+}
+
+.navbar-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar-item{
+    float: left;
+}
+
+.navbar-link{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar-link:hover{
+    background-color: #eee;
+}
+
+.intro{
+    text-align: center;
+    font-family: Quicksand;
+}
+
+.intro-list{
+    list-style-position: inside;
+}
+
+.budgeting-tool{
+     text-align: center;
+     font-family: Quicksand;
+}
+
+#about-link{
+    float: right;
+}
